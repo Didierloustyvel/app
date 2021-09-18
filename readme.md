@@ -1,9 +1,13 @@
 Hello world
 
 instruction dans le terminal de votre dossier racine :
+
 npm install express
+
 npm install socket.io
+
 npm install nodemon -g
+
 npm install ejs
 
 Express permet la création de serveur
