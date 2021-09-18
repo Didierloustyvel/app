@@ -3,7 +3,6 @@ const express = require("express")
 const http = require("http");
 const app = express()
 const server = http.createServer(app);
-const fs = require('fs');
 
 const io = require("socket.io")(server);
 app.set("views", "./views")
@@ -14,9 +13,8 @@ app.get("/*", (req, res) => {
 })
 
 io.sockets.on('connection', async (socket) => {
-    socket.on('data', async (value) => {
-        console.log(value)
-    });
+    console.log('nouveau Client')
+ 
 })
 
 server.listen(PORT, () => console.log("Server started"))
